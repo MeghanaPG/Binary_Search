@@ -17,11 +17,6 @@ class Solution:
                     else:
                         left = mid + 1 
                 return False  
-                # Linear Search 
-                # for j in range(len(matrix[0])):
-                #     if matrix[i][j] == target:
-                #         return True 
-                # return False 
             i += 1
         
         return False
