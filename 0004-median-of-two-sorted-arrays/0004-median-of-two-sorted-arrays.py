@@ -16,5 +16,3 @@ class Solution:
                 num = nums[right]
                 calc = (k+num)/2
                 return calc
-
-
