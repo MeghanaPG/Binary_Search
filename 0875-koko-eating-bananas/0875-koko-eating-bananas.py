@@ -11,6 +11,9 @@ class Solution:
             hours = 0 
             for i in range(len(piles)):
                 hours += math.ceil(piles[i]/mid)
+            # below condition means that, if hours > h then monkey will
+            #  have to eat more banana's per hour to 
+            # finish them all else it can eat slightly slowly and hence right -= 1
             if hours > h:
                 left = mid + 1 
             else:
