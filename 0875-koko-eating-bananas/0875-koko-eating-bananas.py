@@ -5,14 +5,14 @@ class Solution:
         k = max_no_bananas
 
         while left <= right:
-            mid = left + (right-left)//2
-            hours = 0
+            mid = left + (right - left)//2
+            hours = 0 
             for i in range(len(piles)):
                 hours += math.ceil(piles[i]/mid)
-
+            
             if hours > h:
                 left = mid + 1
             else:
-                right = mid - 1
+                right = mid - 1 
                 k = min(k, mid)
-        return k
+        return k 
