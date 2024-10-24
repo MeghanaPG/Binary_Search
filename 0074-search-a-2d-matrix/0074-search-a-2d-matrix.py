@@ -6,16 +6,17 @@ class Solution:
 
         while i < num_rows:
             if matrix[i][0] <= target <= matrix[i][-1]:
-                left, right = 0, len(matrix[0]) - 1 
+                left, right = 0, len(matrix[0])-1
                 while left <= right:
-                    mid = left + (right - left)// 2
+                    mid = left + (right - left)//2
                     if matrix[i][mid] == target:
                         return True 
                     if target < matrix[i][mid]:
-                        right = mid - 1
+                        right = mid - 1 
                     else:
-                        left = mid + 1
+                        left = mid + 1 
                 return False 
             i += 1
         return False 
-                
+
+            
